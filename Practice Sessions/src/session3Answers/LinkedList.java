@@ -1,6 +1,5 @@
 package session3Answers;
 
-
 public class LinkedList
 {
 	private class Node

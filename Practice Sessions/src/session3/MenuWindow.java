@@ -13,7 +13,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 public class MenuWindow extends JFrame 
 {
-	static String[] OPTIONS = {"Open File", "Display List", "Search", "Exit"};
+	static final String[] OPTIONS = {"Open File", "Display List", "Search", "Exit"};
 	static LinkedList theList = new LinkedList();
 	
 	private MenuWindow(String content)
@@ -70,7 +70,6 @@ public class MenuWindow extends JFrame
 				break;
 			case 1:
 				MenuWindow window = new MenuWindow(theList.display());
-				mainMenu();
 				break;
 			case 2:
 				int toSearch = Integer.parseInt(JOptionPane.showInputDialog("What number would you like to search for in the list?"));
